@@ -4,6 +4,7 @@ server:
 notification:
   from-email: ${MAIL_USERNAME:jeyarubanjenushan3@gmail.com}
   from-name: Jenu Air
+  check-in-url: http://localhost:5000/booking/check-in
 
 spring:
   kafka:
