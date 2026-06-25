@@ -1,2 +1,32 @@
 server:
   port: 5010
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME:jeyarubanjenushan3@gmail.com}
+    password: ${MAIL_APP_PASSWORD:rxad cuby ilkw ursh}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+        debug: false  
+    thymeleaf:
+      prefix: classpath:/templates/
+      suffix: .html
+      mode: HTML
+      encoding: UTF-8
+      cache: false  
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
