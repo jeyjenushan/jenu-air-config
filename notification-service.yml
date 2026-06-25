@@ -1,9 +1,16 @@
 server:
   port: 5010
 
+notification:
+  from-email: ${MAIL_USERNAME:jeyarubanjenushan3@gmail.com}
+  from-name: Jenu Air
+
 spring:
   kafka:
     bootstrap-servers: localhost:9092
+    consumer:
+      group-id: notification-service-group
+    
   mail:
     host: smtp.gmail.com
     port: 587
