@@ -1,11 +1,16 @@
+
+
 server:
-  port: 5002
+  port: 5008
+
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/airline_db
+    url: jdbc:mysql://localhost:3306/ancillary_db
     username: root
     password: Viber+1014
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+
 
 eureka:
   client:

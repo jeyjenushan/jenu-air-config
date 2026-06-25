@@ -1,0 +1,12 @@
+server:
+  port: 5011
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/airline_price_db
+    username: root
+    password: Viber+1014
